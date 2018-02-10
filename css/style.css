@@ -1,0 +1,82 @@
+body {
+    background-color: aquamarine;
+    animation-name: koloruj;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-delay: 1500ms;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes koloruj {
+    0%, 10% {
+        background: yellow;
+/*        aby kolor pierwszy nie przeskoczył zbyt szybko należy tutaj podać dwie wartości*/
+    }
+    40% {
+        background: red;
+    }
+    60% {
+        background: black;
+    }
+    100% {
+        background: green;
+    }
+}
+
+figure {
+    margin: 40px auto;
+    width: 400px;
+    animation-name: zmien_szerokosc;
+    animation-duration: 3000ms;
+    animation-iteration-count: 3;
+}
+
+/*
+figure img {
+    width: 100%;
+    transition:  all 1s;
+}
+
+@keyframes zmien_szerokosc {
+    0% {
+        width: 400px;
+    }
+100% {
+    width: 650px;
+}
+}*/
+
+figure img {
+    width: 100%;
+    transition: all 1s;
+}
+
+@keyframes zmien_szerokosc {
+    0% {
+        width: 400px;
+    }
+    40% {
+        width: 650px;
+    }
+    60% {
+        width: 400px;
+    }
+    100% {
+        width: 650px;
+    }
+}
+
+/*
+figure img {
+    width: 100%;
+    transition: all 1s;
+}
+
+@keyframes zmien_szerokosc {
+    0%, 60% {
+        width: 400px;
+    }
+    40%, 100% {
+        width: 650px;
+}*/
